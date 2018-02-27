@@ -13,9 +13,9 @@ Python tensorflow is used to predict the congestion types based on image object 
 
 **5. Use  traffic congestion images(supports only jpeg/jpg format) e.g**
 
-     `python run.py test_image/Aut10_010.jpg`
+     python run.py test_image/Aut10_010.jpg
      
 **6. Example output:**
 
-      `high congestion (score = 0.70454)`
+      high congestion (score = 0.70454)
 
