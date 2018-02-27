@@ -36,5 +36,5 @@ with tf.Session() as sess:
         score = predictions[0][node_id]
         if (score >=0.5):
             print('%s (score = %.5f)' % (congestion_type, score))
-#os.system('python main.py')
+
         
