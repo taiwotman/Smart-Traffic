@@ -38,7 +38,7 @@ Create Flask REST API using (real-time) traffic image  data for prediction.
 
 2. Connect and chat me on [LinkedIn](https://www.linkedin.com/in/taiwo-o-adetiloye-505a8023/).
 
-**FOR ACADEMIC PURPOSE, kindly, cite our related work:**
+**FOR ACADEMIC PURPOSE; kindly, cite our related work:**
 
      Taiwo Adetiloye, Anjali Awasthi(2017). Predicting Short-Term Congested Traffic Flow on Urban Motorway Networks. 
      In P. Samui, S.S Roy, V.E. Balas(Eds.), Handbook of Neural Computation(pg 145–165).
