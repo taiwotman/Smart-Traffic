@@ -15,6 +15,7 @@ Python tensorflow is used to predict the congestion types based on image object 
 
      `python run.py test_image/Aut10_010.jpg `
      
-**6. Example output: 
+**6. Example output:**
+
       `high congestion (score = 0.70454)  `
 
