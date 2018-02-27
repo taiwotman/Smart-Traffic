@@ -28,5 +28,9 @@ Python tensorflow is used to predict the congestion types based on image object 
 Create Flask API with real time traffic data for prediction.
 
 **Want to contribute?** 
+1. Fork repo
 
+     or
+
+2.
 Connect and chat me on [LinkedIn](https://www.linkedin.com/in/taiwo-o-adetiloye-505a8023/).
