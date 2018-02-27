@@ -32,5 +32,4 @@ Create Flask API with real time traffic data for prediction.
 
      or
 
-2.
-Connect and chat me on [LinkedIn](https://www.linkedin.com/in/taiwo-o-adetiloye-505a8023/).
+2. Connect and chat me on [LinkedIn](https://www.linkedin.com/in/taiwo-o-adetiloye-505a8023/).
