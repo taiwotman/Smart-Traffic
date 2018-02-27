@@ -5,7 +5,7 @@ Python tensorflow is used to predict the congestion types based on image object 
 
 **1. Clone git repository and `cd` into the directory**
 
-     git clone https://github.com/taiwotman/TensorflowPredictCongestTypes.git
+     git clone https://github.com/taiwotman/TensorflowPredictCongestionTypes.git
 
 **2. Set up virtualevn with directory _venv_** 
 
