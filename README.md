@@ -19,7 +19,7 @@ Python tensorflow is used to predict the congestion types based on image object 
 
      pip install tensorflow
 
-**5. Use  traffic congestion images(supports only jpeg/jpg format) e.g**
+**5. Use  traffic congestion images(supports only jpeg/jpg format). For example:**
 
      python run.py test_image/Aut10_010.jpg
      
