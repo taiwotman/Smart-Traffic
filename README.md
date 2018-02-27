@@ -9,7 +9,7 @@ Python tensorflow is used to predict the congestion types based on image object 
 
 **3. Activate _vevn using:**
 
-     `source venv/bin/activate`
+     source venv/bin/activate
 
 **4. Install tensorflow using:**
 
