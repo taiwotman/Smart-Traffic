@@ -30,6 +30,6 @@ Create Flask API with (real-time) traffic image  data for prediction.
 **Want to contribute?** 
 1. Fork repository
 
-     or
+     and/or
 
 2. Connect and chat me on [LinkedIn](https://www.linkedin.com/in/taiwo-o-adetiloye-505a8023/).
