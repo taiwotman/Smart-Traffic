@@ -1,7 +1,7 @@
 # TensorflowPredictCongestTypes
 Python tensorflow is used to predict the congestion types based on image object recognition
 
-**How to test**
+**HOW TO TEST**
 
 **1. Git clone repository and `cd` into the directory**
 
