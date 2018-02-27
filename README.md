@@ -9,7 +9,9 @@ Python tensorflow is used to predict the congestion types based on image object 
 
 **3. `source venv/bin/activate`**
 
-**4. Install tensorflow using** `pip install tensorflow`
+**4. Install tensorflow using:**
+
+     pip install tensorflow
 
 **5. Use  traffic congestion images(supports only jpeg/jpg format) e.g**
 
