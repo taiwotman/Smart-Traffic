@@ -3,7 +3,7 @@ Python tensorflow is used to predict the congestion types based on image object 
 
 **HOW TO TEST**
 
-**1. Git clone repository and `cd` into the directory**
+**1. Clone git repository and `cd` into the directory**
 
 **2. Set up virtualevn with directory _venv_** 
 
