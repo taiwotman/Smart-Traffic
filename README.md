@@ -9,7 +9,7 @@ Python tensorflow is used to predict the congestion types based on image object 
      
      cd TensorflowPredictCongestionTypes
 
-**2. Set up virtualenv with directory _venv_** 
+**2. Set up [virtualenv](https://virtualenv.pypa.io/en/stable/) with directory _venv_** 
 
      virtualenv venv
 
