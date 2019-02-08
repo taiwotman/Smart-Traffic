@@ -38,7 +38,7 @@ Create Flask REST API using (real-time) traffic image  data for prediction.
 
      and/or
 
-2. Connect and chat me on [LinkedIn](https://www.linkedin.com/in/taiwo-o-adetiloye-505a8023/).
+2. Connect and chat me on [LinkedIn](https://www.linkedin.com/in/taiwo-o-adetiloye-ph-d-505a8023/).
 
 **FOR ACADEMIC PURPOSE; kindly, cite our related work:**
 
