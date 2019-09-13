@@ -1,5 +1,7 @@
 # Using Tensorflow to Predict Traffic Congestion Types.
 Python tensorflow is used to predict the congestion types based on image object recognition
+ 
+<p align="center"> <img width="200" height="200" src="https://github.com/taiwotman/TensorflowPredictCongestionTypes/blob/master/miscellanous/smart-traffic.png"><p>
 
 **HOW TO TEST**
 
