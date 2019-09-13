@@ -42,7 +42,8 @@ Flask REST API using (real-time) traffic image  data for prediction.
 
 2. Connect and chat me on [LinkedIn](https://www.linkedin.com/in/taiwo-o-adetiloye-ph-d-505a8023/).
 
-**FOR ACADEMIC PURPOSE; kindly, cite our related work:**
+**FOR ACADEMIC PURPOSE; 
+kindly, cite our related work:**
      
      T. Adetiloye, A. Awasthi  (2019). Multimodal Big Data Fusion for Traffic Congestion Prediction. 
     In: Seng K., Ang L., Liew   AC., Gao J. (eds) Multimodal Analytics for Next-Generation Big Data Technologies 
