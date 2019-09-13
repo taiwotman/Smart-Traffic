@@ -46,7 +46,7 @@ Flask REST API using (real-time) traffic image  data for prediction.
      
      T. Adetiloye, A. Awasthi  (2019). Multimodal Big Data Fusion for Traffic Congestion Prediction. 
     In: Seng K., Ang L., Liew   AC., Gao J. (eds) Multimodal Analytics for Next-Generation Big Data Technologies 
-    and Applications. Springer, Cham
+    and Applications(pg. 319-335). doi: https://doi.org/10.1007/978-3-319-97598-6_13Springer. Springer, Cham.
      
      
      T. Adetiloye, A. Awasthi(2017). Predicting Short-Term Congested Traffic Flow on Urban Motorway Networks. 
