@@ -29,9 +29,11 @@ Python tensorflow is used to predict the congestion types based on image object 
 
       high congestion (score = 0.70454)
 
-**TO DO**
+Docker: 
 
-Create Flask REST API using (real-time) traffic image  data for prediction.
+https://hub.docker.com/r/taiwotman/smart-traffic
+
+Flask REST API using (real-time) traffic image  data for prediction.
 
 **You want to be a contributor?** 
 1. Fork repository
@@ -41,9 +43,16 @@ Create Flask REST API using (real-time) traffic image  data for prediction.
 2. Connect and chat me on [LinkedIn](https://www.linkedin.com/in/taiwo-o-adetiloye-ph-d-505a8023/).
 
 **FOR ACADEMIC PURPOSE; kindly, cite our related work:**
-
+     
+     T. Adetiloye, A. Awasthi  (2019). Multimodal Big Data Fusion for Traffic Congestion Prediction. 
+    In: Seng K., Ang L., Liew   AC., Gao J. (eds) Multimodal Analytics for Next-Generation Big Data Technologies 
+    and Applications. Springer, Cham
+     
+     
      T. Adetiloye, A. Awasthi(2017). Predicting Short-Term Congested Traffic Flow on Urban Motorway Networks. 
      In P. Samui, S.S Roy, V.E. Balas(Eds.), Handbook of Neural Computation(pg. 145–165).
      doi: https://doi.org/10.1016/B978-0-12-811318-9.00008-9 . Academic Press.
+     
+     
 
 
