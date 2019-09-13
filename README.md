@@ -29,7 +29,7 @@ Python tensorflow is used to predict the congestion types based on image object 
 
       high congestion (score = 0.70454)
       
-**Docker: 
+**Docker:** 
 
 https://hub.docker.com/r/taiwotman/smart-traffic
 
