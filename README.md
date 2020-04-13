@@ -64,8 +64,8 @@ kindly, cite our related work:**
           doi: https://doi.org/10.1016/B978-0-12-811318-9.00008-9 . Academic Press.
           
      T. Adetiloye, A. Awasthi(2018). Traffic Condition Monitoring Using Social Media Analytics. 
-          In: Roy S., Samui P., Deo R.,Ntalampiras S. (eds) Big Data in Engineering Applications. Studies in Big Data, vol 44.
-    Springer, Singapore
+          In: Roy S., Samui P., Deo R.,Ntalampiras S. (eds) Big Data in Engineering Applications. 
+          Studies in Big Data, vol 44., Springer, Singapore
 
      
 
