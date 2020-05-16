@@ -51,7 +51,7 @@ Mobility as a Service(MaaS) Application for real-time traffic prediction
 
 2. Connect and chat me on [LinkedIn](https://www.linkedin.com/in/taiwo-o-adetiloye-ph-d-505a8023/).
 
-**FOR ACADEMIC PURPOSE; 
+**For ACADEMIC PURPOSE; 
 kindly, cite our related work:**
      
      T. Adetiloye, A. Awasthi(2019). Multimodal Big Data Fusion for Traffic Congestion Prediction. 
