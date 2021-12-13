@@ -58,7 +58,7 @@
 
       high congestion (score = 0.70454)
 
-## AUTHORIZATION KEY
+## Authorization Key
 ***JSON PARSER***
 
     headers= {
