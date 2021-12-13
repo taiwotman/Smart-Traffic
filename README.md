@@ -1,6 +1,22 @@
 # Using Tensorflow to Predict Traffic Congestion Types.
 Python tensorflow is used to predict the congestion types based on image object recognition
 
+
+**RELEASE 2.1.1**
+
+- Create Flask REST API using (real-time) traffic image  data for prediction.
+
+- Implement search query on the basis on region
+      
+- Make Jinja template to display parameters on index.page 
+
+- On Index page display image with URL while adding dropdown or selection with regions
+
+- Clean template
+      
+- Add Prediction features
+
+
 **HOW TO TEST**
 
 **1. Clone git repository and `cd` into the directory**
@@ -28,22 +44,6 @@ Python tensorflow is used to predict the congestion types based on image object 
 **6. Example output:**
 
       high congestion (score = 0.70454)
-
-**FLASK REST API **
-
-***RELEASE 2.1.1***
-
-- Create Flask REST API using (real-time) traffic image  data for prediction.
-
-- Implement search query on the basis on region
-      
-- Make Jinja template to display parameters on index.page 
-
-- On Index page display image with URL while adding dropdown or selection with regions
-
-- Clean template
-      
-- Add Prediction features
  
       
 ## Using Docker
