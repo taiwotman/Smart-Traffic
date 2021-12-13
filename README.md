@@ -16,7 +16,7 @@
 - Add Prediction features
 
 
-**HOW TO TEST**
+
 
 **1. Clone git repository and `cd` into the directory**
 
@@ -35,12 +35,17 @@
 **4. Install [tensorflow](https://www.tensorflow.org) and others using:**
 
      pip install -r requirements.txt
+ 
+**5. Run**
+     python run.py
 
-**5. Use  traffic congestion image(supports only jpeg/jpg format). For example:**
+**HOW TO TEST**
+
+**6. Use  traffic congestion image(supports only jpeg/jpg format). For example:**
 
      python run.py test_image/Aut10_010.jpg
      
-**6. Example output:**
+**7. Example output:**
 
       high congestion (score = 0.70454)
  
