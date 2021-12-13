@@ -9,6 +9,9 @@
  <img width="200" height="200" src="https://github.com/taiwotman/TensorflowPredictCongestionTypes/blob/master/miscellanous/low-congestion.png">
 </p>
 
+<p align="justify">
+A system and method for the prediction of vehicle traffic congestion on a given roadway within a region. In particular, the computer implemented method of the present disclosure utilize real time traffic images from traffic cameras for the input of data and utilizes computer processing and machine learning to model a predictive level of congestion within a category of low congestion, medium congestion, or high congestion. By implementing machine learning in the comparison of exemplary images and administrator review, the computer processing system and method steps can predict a more efficient real-time congestion prediction over time.
+</p>
 
 ### Dependencies
 ![Python](https://img.shields.io/badge/Python-v3.7-blue.svg?logo=python&longCache=true&logoColor=white&colorB=5e81ac&style=flat-square&colorA=4c566a)
