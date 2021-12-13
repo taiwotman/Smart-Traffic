@@ -76,7 +76,7 @@ __Sample Test Case__
 ***Json Parser***
 
     headers= {
-                    "Authorization": "************,
+                    "Authorization": "************",
                     "Connection": "keep-alive" 
               }
       
