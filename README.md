@@ -13,6 +13,8 @@
 A system and method for the prediction of vehicle traffic congestion on a given roadway within a region. In particular, the computer implemented method of the present disclosure utilize real time traffic images from traffic cameras for the input of data and utilizes computer processing and machine learning to model a predictive level of congestion within a category of low congestion, medium congestion, or high congestion. By implementing machine learning in the comparison of exemplary images and administrator review, the computer processing system and method steps can predict a more efficient real-time congestion prediction over time.
 </p>
 
+*Read the [WhitePaper](https://github.com/taiwotman/Smart-Traffic/blob/master/miscellanous/Whitepaper.pdf)*
+
 ### Dependencies
 ![Python](https://img.shields.io/badge/Python-v3.7-blue.svg?logo=python&longCache=true&logoColor=white&colorB=5e81ac&style=flat-square&colorA=4c566a)
 ![Tensorflow](https://img.shields.io/badge/Tensorflow-v2.5.0rc0-blue.svg?longCache=true&logo=python&style=flat-square&logoColor=white&colorB=5e81ac&colorA=4c566a)
@@ -21,6 +23,8 @@ A system and method for the prediction of vehicle traffic congestion on a given 
 ![Numpy](https://img.shields.io/badge/Numpy-v1.13.3-blue.svg?longCache=true&logo=python&style=flat-square&logoColor=white&colorB=5e81ac&colorA=4c566a)
 ![WTForms](https://img.shields.io/badge/WTForms-v2.1-blue.svg?longCache=true&logo=python&style=flat-square&logoColor=white&colorB=5e81ac&colorA=4c566a)
 ![Werkzeug](https://img.shields.io/badge/Werkzeug-v0.7-blue.svg?longCache=true&logo=python&style=flat-square&logoColor=white&colorB=5e81ac&colorA=4c566a)
+
+
 
 ### REPOSITORY
 Name changed from TensorFlowPredictCongestionTypes to Smart-Traffic
@@ -86,7 +90,7 @@ __Sample Test Case__
 
     docker run --rm -p 80:5000 taiwotman/smart-traffic:latest 
 
-Open on [brower](https://localhost:80)
+Open on [browser](https://localhost:80)
 
 ### AWS EKS
 
