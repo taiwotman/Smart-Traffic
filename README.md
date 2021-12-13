@@ -15,9 +15,6 @@ A system and method for the prediction of vehicle traffic congestion on a given 
 
 *Read the [WhitePaper](https://github.com/taiwotman/Smart-Traffic/blob/master/miscellanous/Whitepaper.pdf)*
 
-<p align="center">
- <img width="500" height="500" src="https://github.com/taiwotman/Smart-Traffic/blob/master/miscellanous/Architecture%20of%20real-time%20prediction.png">
-</p>
 
 ### Dependencies
 ![Python](https://img.shields.io/badge/Python-v3.7-blue.svg?logo=python&longCache=true&logoColor=white&colorB=5e81ac&style=flat-square&colorA=4c566a)
@@ -71,6 +68,11 @@ Name changed from TensorFlowPredictCongestionTypes to Smart-Traffic
      python run.py
 
 __Sample Test Case__
+
+<p align="center">
+ <img width="500" height="500" src="https://github.com/taiwotman/Smart-Traffic/blob/master/miscellanous/Architecture%20of%20real-time%20prediction.png">
+</p>
+
 
 **6. Use  traffic congestion image(supports only jpeg/jpg format). For example:**
 
