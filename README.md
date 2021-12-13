@@ -131,6 +131,10 @@ Delete cluster
 
 4. No result return- Obtain authorization key
 
+### Credit
+
+So much gratitude to [New South Wales Transport Agency](www.transport.nsw.gov.au) for the open live traffic data API
+
 
 ### You want to be a contributor?
 
