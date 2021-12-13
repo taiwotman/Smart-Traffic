@@ -4,5 +4,5 @@ Werkzeug>=0.7
 WTForms==2.1 
 numpy>=1.13.3
 tensorflow==2.5.0rc0
-flask-wtf
+flask-wtf==1.0.0
 
