@@ -25,7 +25,7 @@ A system and method for the prediction of vehicle traffic congestion on a given 
 ### REPOSITORY
 Name changed from TensorFlowPredictCongestionTypes to Smart-Traffic
 
-**RELEASE VERSION 2.1.1**
+**RELEASE VERSION  1.1.0**
 
 - Create Flask REST API using (real-time) traffic image  data for prediction.
 
