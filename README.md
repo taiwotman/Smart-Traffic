@@ -58,7 +58,8 @@ Name changed from TensorFlowPredictCongestionTypes to Smart-Traffic
 
      pip install -r requirements.txt
  
-**5. Run**
+**5. Run command**
+     
      python run.py
 
 __Sample Test Case__
@@ -83,9 +84,11 @@ __Sample Test Case__
       
 ## Using Docker
 
-   docker build -t taiwotman/smart-traffic:latest .
+    docker build -t taiwotman/smart-traffic:latest .
 
-   docker run --rm -p 80:5000 taiwotman/smart-traffic:latest 
+    docker run --rm -p 80:5000 taiwotman/smart-traffic:latest 
+
+Open on [brower](localhost:80)
 
 ### AWS EKS
 
