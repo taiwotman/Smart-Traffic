@@ -149,6 +149,7 @@ and Google for the [Tensorflow](https://www.tensorflow.org/). Without opensource
 2. Connect and chat me on [LinkedIn](https://www.linkedin.com/in/taiwo-o-adetiloye-505a8023/).
 
 **FOR ACADEMIC PURPOSE; kindly, cite our related work:**
+
  T. Adetiloye, A. Awasthi  (2019). Multimodal Big Data Fusion for Traffic Congestion Prediction. 
      In: Seng K., Ang L., Liew   AC., Gao J. (eds) Multimodal Analytics for Next-Generation Big Data Technologies 
      and Applications(pg. 319-335). doi: https://doi.org/10.1007/978-3-319-97598-6_13. Springer, Cham.
