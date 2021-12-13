@@ -57,7 +57,7 @@
 **5. Run**
      python run.py
 
-_How to test_
+_Sample Test Case_
 
 **6. Use  traffic congestion image(supports only jpeg/jpg format). For example:**
 
