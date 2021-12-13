@@ -83,7 +83,7 @@ __Sample Test Case__
 
       high congestion (score = 0.70454)
 
-**8. Use [development branch](https://github.com/taiwotman/Smart-Traffic/tree/development) for test.
+**8. Use [development branch](https://github.com/taiwotman/Smart-Traffic/tree/development) for test.**
 
 ## Authorization header
 ***Json Parser***
