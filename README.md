@@ -67,14 +67,18 @@
 
 ### AWS EKS
 
-kubectl apply -f aws_eks/deployment.yaml smart-traffic-service created deployment.apps/smart-traffic created
+   kubectl apply -f aws_eks/deployment.yaml 
+
+smart-traffic-service  deployment.apps/smart-traffic created
 
 http://localhost:8080/api/v1/namespaces/default/services/smart-traffic-service/proxy
-     
-eksctl delete cluster --region=us-east-2 --name=smart-cluster
+
+Delete cluster
+
+    eksctl delete cluster --region=us-east-2 --name=smart-cluster
 
 
-## Deploy app on google cloud engine
+## Google cloud
 
      gcloud app deploy
 
