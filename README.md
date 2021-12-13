@@ -149,7 +149,7 @@ and Google for the [Tensorflow](https://www.tensorflow.org/). Without opensource
 
  T. Adetiloye, A. Awasthi(2017). Predicting Short-Term Congested Traffic Flow on Urban Motorway Networks. 
  In P. Samui, S.S Roy, V.E. Balas(Eds.), Handbook of Neural Computation(pg. 145–165).
- doi: https://doi.org/10.1016/B978-0-12-811318-9.00008-9 . Academic Press.
+ doi: https://doi.org/10.1016/B978-0-12-811318-9.00008-9. Academic Press.
 
 ### LICENSE
 
