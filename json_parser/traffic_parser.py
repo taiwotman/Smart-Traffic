@@ -17,7 +17,7 @@ def get_traffic(query):
     
     try:
             headers= {
-                "Authorization": "************,
+                "Authorization": "************",
                 "Connection": "keep-alive" 
             }
 
