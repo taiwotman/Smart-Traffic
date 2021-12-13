@@ -14,7 +14,7 @@
 
 - Create Flask REST API using (real-time) traffic image  data for prediction.
 
-- Implement search query on the basis on region
+- Implement search query based on region
       
 - Make Jinja template to display parameters on index.page 
 
