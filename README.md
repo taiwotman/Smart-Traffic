@@ -140,7 +140,7 @@ Delete cluster
  In P. Samui, S.S Roy, V.E. Balas(Eds.), Handbook of Neural Computation(pg. 145–165).
  doi: https://doi.org/10.1016/B978-0-12-811318-9.00008-9 . Academic Press.
 
-**COMMERCIAL USE, UNDER PATENT LICENCE**
+**COMMERCIAL USE UNDER PATENT LICENCE**
 
  T. Adetiloye (2021). Predicting Short-Term Traffic Flow Congestion On Urban Motorway Networks (Patent No US11,195,412 B2). U.S. Patent and Trademark Office. 
  https://rb.gy/faqg9y
