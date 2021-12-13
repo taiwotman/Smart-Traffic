@@ -1,5 +1,13 @@
 # Predicting Short-Term Traffic Flow Congestion On Urban Motorway Networks
 
+<p align="center"> 
+ <img width="200" height="200" src="https://github.com/taiwotman/TensorflowPredictCongestionTypes/blob/master/miscellanous/smart-traffic.png"></p>
+ <p align="center">
+<img width="200" height="200" src="https://github.com/taiwotman/TensorflowPredictCongestionTypes/blob/master/miscellanous/high-congestion.png">
+ <img width="200" height="200" src="https://github.com/taiwotman/TensorflowPredictCongestionTypes/blob/master/miscellanous/medium-congestion.png">
+ <img width="200" height="200" src="https://github.com/taiwotman/TensorflowPredictCongestionTypes/blob/master/miscellanous/low-congestion.png">
+</p>
+
 
 **RELEASE 2.1.1**
 
