@@ -1,0 +1,80 @@
+{% extends "base_template.html" %}
+
+  {% block content %} 
+          <div class="col-xs-12 col-sm-12 col-md-12 mission">
+
+            <h2>Brief description</h2>
+
+<p>Traffic congestion has become a major issue all around the world, thus policymakers and city managers have huge challenges to improve the quality of life in urban areas. It is a widely occurring traffic phenomenon in metropolitan areas due to the increasing number of road vehicle users and is characterized by slower vehicles’ speeds, longer travel times, queues and, sometimes, complete paralysis of the traffic network.
+
+  Smart-Traffic is Mobility as a Service application for real-time traffic prediction.</p>
+  
+<p> This proof of concept relies on the work of Dr. Taiwo O. Adetiloye:
+  
+<p><b>Adetiloye</b>, Taiwo Olubunmi (2018), Predicting Short-Term Traffic Congestion on 
+Urban Motorway Networks. Ph.D. thesis, 
+<a href="https://spectrum.library.concordia.ca/985249/" target= "blank">https://spectrum.library.concordia.ca/985249/</a>, Concordia University, Montreal, QC, Canada</p>
+</p>
+
+<p>The following three-steps are required for setup:</p>
+
+<p>
+<ul>
+<li>1. Install Docker<br><br></li>
+
+<li>2. Execute the following docker commands from the command line:</li>
+  <p style="background-color: rgb(171, 179, 196); padding-left:10px; padding-top:10px ; padding-bottom:10px">
+    docker pull taiwotman/smart-traffic:beta1.1 <br>
+
+    docker run --rm -p  &lt;desired-port&gt;:5000   &lt;image-id&gt;
+  </p> 
+  <p>
+    For example:
+  </p> 
+  <p style="background-color:rgb(171, 179, 196);padding-left:10px; padding-top:10px; padding-bottom:10px">
+    docker pull taiwotman/smart-traffic:latest
+
+    docker run --rm  -p  80:5000 taiwotman/smart-traffic:latest</p>
+<li>3. On your browser, open: <a href="http://localhost:80" target="blank"> http://localhost:80</a></li>
+</ul></p>
+<p>
+<b>Note:</b><br>
+
+<p>
+Due to latency, the API request takes an average of 1min. 
+</p>
+<p>
+Kindly, exercise some patience to complete page load with predictions after the submit button is pressed.
+</p>
+<p>
+Sample codes on Github repository: <a href="https://github.com/taiwotman/TensorflowPredictCongestionTypes" target="blank">https://github.com/taiwotman/TensorflowPredictCongestionTypes</a>
+</p>
+<br>
+<h2>Credit</h2>
+<p>
+So much gratitude to New South Wales Transport Agency @ transport.nsw.gov.au for the open live traffic data API:
+</p>
+<p>
+<a href="https://www.livetraffic.com/desktop.html#cameraview" target="blank">https://www.livetraffic.com/desktop.html#cameraview</a>
+</p>
+<p>
+<a href="https://data.nsw.gov.au/data/dataset" target="blank">https://data.nsw.gov.au/data/dataset</a>
+</p>
+<p><b>Developer:</b> Taiwo O. Adetiloye, Ph.D.</p>
+<p><b>Website:</b><a href="https://taiwotman.github.io" target="blank"> https://taiwotman.github.io</a>
+</p>
+<br>
+<h2>MIT License</h2>
+
+<p>
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+</p>
+<p>
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+          </div>
+        
+  {% endblock %} 
+      
+  

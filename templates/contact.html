@@ -1,0 +1,91 @@
+
+{% extends "base_template.html" %}
+
+{% block content %}
+
+
+
+<div class ="row " style="justify-content: center;display: flex;flex-direction: column; align-items: center;
+margin-top: 40px;" > 
+  <!--
+    <div class="col-xs-12 col-sm-12 col-md-12 centered" >
+
+      {% if success %}
+        <p class="message">Thank you for your message. We'll get back to you shortly.</p>
+      
+      {% else %}  
+        {% for message in form.name.errors %}
+          <div class="flash">{{ message }}</div>
+        {% endfor %}
+        
+        {% for message in form.email.errors %}
+          <div class="flash">{{ message }}</div>
+        {% endfor %}
+        
+        {% for message in form.subject.errors %}
+          <div class="flash">{{ message }}</div>
+        {% endfor %}
+        
+        {% for message in form.message.errors %}
+          <div class="flash">{{ message }}</div>
+        {% endfor %}
+
+        
+
+   
+        <form action="{{ url_for('contact') }}" method=post class="form">
+          {{ form.hidden_tag() }}
+          
+          {{ form.name.label }}{{ form.name }}
+          
+          {{ form.email.label }}
+          {{ form.email }}
+          
+          {{ form.subject.label }}
+          {{ form.subject }}
+          
+          {{ form.message.label }}
+          {{ form.message }}
+         
+          {{ form.submit }}
+         
+         
+       
+        </form>
+        
+      
+      {% endif %} -->
+
+      <form id="contactForm"  class="single-form quate-form wow col-md-6" action="https://formspree.io/mwkrbzyg" method="POST">
+        <div id="msgSubmit" class="h3 text-center hidden"></div>
+       
+          <div class="col-md-6 col-sm-12 form-group">
+            <input name="firstname" class="contact-name form-control" id="name" type="text" placeholder="First Name" required="" >
+          </div>
+         <br>
+         <div class="col-md-6 col-sm-12 form-group">
+          <input name="lastname" class="contact-name form-control" id="name" type="text" placeholder="Last Name" required="" >
+        </div>
+          <br>
+          <div class="col-sm-12 form-group">
+            <input name="email" class="contact-subject form-control" id="email" type="email" placeholder="Your Email" required="">
+          </div>
+          <br>
+          <div class="col-sm-12 form-group">
+            <textarea name="message" class="contact-message form-control" id="message" rows="6" placeholder="Your Message" required=""></textarea>
+          </div>
+
+          <!-- Subject Button -->
+          <div class=" btn-form col-sm-12 text-center">
+            <button type="submit" style="background-color: rgb(171, 179, 196);" id="form-submit">Send Message</button>
+            <p id="my-form-status" class="text-success"></p>
+          </div>
+       
+      </form>
+    </div>
+    <script src="{{ url_for('static', filename='js/mail.js') }}" type="text/javascript"></script>
+    <!-- <link href="{{url_for('static',filename='css/bootstrap.min.css') }}"  rel="stylesheet"></link> -->
+    
+  
+{% endblock %} 
+

@@ -1,43 +1,88 @@
-import tensorflow as tf
-import tensorboard as tb
-tf.io.gfile = tb.compat.tensorflow_stub.io.gfile
+from flask import Flask,render_template,request, flash
+import json
+from json_parser import traffic_parser
+import logging
+from predictor import predict
 
-import sys
-import os
+# using SendGrid's Python Library - https://github.com/sendgrid/sendgrid-python
+# import sendgrid
+# from forms import ContactForm
 
-#suppress TF log-info messages - remove to display TF logs 
-os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
-# change this as you see fit
-image_path = sys.argv[1]
+app = Flask(__name__)
 
-# Read in the image_data
-image_data = tf.io.gfile.GFile(image_path, 'rb').read()
 
-# Loads label file, strips off carriage return
-label_lines = [line.rstrip() for line in tf.io.gfile.GFile("./pretrained_labels.txt", 'r')]
 
-# Unpersists graph from file
-with tf.io.gfile.GFile("pretrained_graph.pb", 'rb') as f:
-    graph_def = tf.compat.v1.GraphDef()
-    graph_def.ParseFromString(f.read())
-    _ = tf.import_graph_def(graph_def, name='')
+app.config['DEBUG'] = True
 
-with tf.compat.v1.Session() as sess: 
-  # Feed the image_data as input to the graph and get first prediction
-    softmax_tensor = sess.graph.get_tensor_by_name('final_result:0')
+# change this to your own value 
+app.secret_key = 'TL_m#p12LetMeIn123'
+
+@app.route("/")
+def index():
     
-    predictions = sess.run(softmax_tensor, \
-             {'DecodeJpeg/contents:0': image_data})
+    region = request.args.get('region')
     
-    # Sort to show labels of first prediction in order of confidence
-    top_k = predictions[0].argsort()[-len(predictions[0]):][::-1]
-    
-    for node_id in top_k:
-        congestion_type = label_lines[node_id]
-        score = predictions[0][node_id]
-        if (score >=0.5):
-            print(congestion_type)
-            print('%s (score = %.5f))
+    # if not region:
+    #     region= DEFAULTS['region']
+      
+    traffic = traffic_parser.get_traffic(region)
+    return render_template("home.html", traffic_properties = traffic, region=region)
 
-        
+@app.route("/about")
+def about():
+    return render_template("about.html")
+
+
+@app.errorhandler(500)
+def server_error(e):
+    logging.exception('An error occurred during a request.')
+    return """
+    An internal error occurred: <pre>{}</pre>
+    See logs for full stacktrace.
+    """.format(e), 500
+
+
+@app.route('/contact', methods=['GET', 'POST'])
+def contact():
+  # form = ContactForm()
+
+ 
+
+  if request.method == 'POST':
+    # if form.validate() == False:
+    #   flash('All fields are required.')
+    #   return render_template('contact.html', form=form)
+    # else:
+    #     sg = sendgrid.SendGridClient("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")
+    #     message = sendgrid.Mail()
+
+    #     message.add_to("taiwo.adetiloye@gmail.com")
+    #     message.set_from("admin@smarttraffic.com")
+    #     message.set_subject(form.subject.data)
+
+    #     body = """
+    #     From: %s <%s> 
+    #     \n Message: %s
+    #     """ % (form.name.data, form.email.data, form.message.data)
+
+    #     message.set_html(body)
+    #     sg.send(message)
+ 
+
+        return render_template('contact.html', success=True)
+
+  elif request.method == 'GET':
+    return render_template('contact.html', success=True)
+
+
+
+if __name__ == '__main__':
+    # app.run(debug=True, use_reloader=True)
+     # This is used when running locally. Gunicorn is used to run the
+     # app on Google App Engine. See entrypoint in app.yaml.
+     #app.run(debug=True, use_reloader=True)
+     app.run(debug=True, host='0.0.0.0', port=5000)
+    
+
+

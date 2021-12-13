@@ -1,0 +1,30 @@
+runtime: python
+entrypoint: gunicorn -b :$PORT main:app --timeout 90 --graceful-timeout 45 --max-requests-jitter 2000 --max-requests 1500 -w 10 --threads 20
+env: flex
+runtime_config:
+  python_version: 3
+api_version: 1
+threadsafe: true
+
+resources:
+  cpu: 4
+  memory_gb: 15
+
+automatic_scaling:
+  min_num_instances: 1
+  max_num_instances: 3
+  cool_down_period_sec: 180
+  cpu_utilization:
+    target_utilization: 0.6
+
+
+handlers:
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: favicon\.ico
+
+- url: /static
+  static_dir: static
+  
+- url: /.*
+  script: main.app

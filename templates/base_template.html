@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <header>
+    <meta charset="utf-8" name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1; minimum-scale=1.0; user-scalable=no; target-densityDpi=device-dpi" />
+    <title>Smart-Traffic</title>
+    <!-- <meta http-equiv="refresh" content="500"/>   -->
+    
+    <!-- <link href="{{url_for('static',filename='css/bootstrap.min.css') }}" style="text/css" rel="stylesheet"></link> -->
+  
+    <link rel="shortcut icon" href="{{url_for('static',filename='images/favicon.ico') }}"/>
+   
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css') }}"  >
+
+
+
+  </header>
+  <body>
+  <div class="container" id="content">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12">
+        
+          <div class="logo">
+            <img src="{{ url_for('static',filename='images/logonew.png') }}" alt="logo">
+          </div>
+        
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 links">
+        <a href="{{ url_for('index') }}">Home</a>
+        <a href="{{ url_for('about')}}">About</a>
+        <a href="{{ url_for('contact')}}">Contact</a>
+      </div>
+    </div>
+    
+        {% block content %}
+        {% endblock %}
+
+    
+
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 copyright">
+        <footer>
+          <div class="copyright">
+            <span>© Copyright Taiwo O. Adetiloye. All rights reserved.</span>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </div>
+  </body>
+</html>
