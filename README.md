@@ -1,13 +1,5 @@
 # Using Tensorflow to Predict Traffic Congestion Types.
 Python tensorflow is used to predict the congestion types based on image object recognition
- 
-<p align="center"> 
- <img width="200" height="200" src="https://github.com/taiwotman/TensorflowPredictCongestionTypes/blob/master/miscellanous/smart-traffic.png"></p>
- <p align="center">
-<img width="200" height="200" src="https://github.com/taiwotman/TensorflowPredictCongestionTypes/blob/master/miscellanous/high-congestion.png">
- <img width="200" height="200" src="https://github.com/taiwotman/TensorflowPredictCongestionTypes/blob/master/miscellanous/medium-congestion.png">
- <img width="200" height="200" src="https://github.com/taiwotman/TensorflowPredictCongestionTypes/blob/master/miscellanous/low-congestion.png">
-</p>
 
 **HOW TO TEST**
 
@@ -25,9 +17,9 @@ Python tensorflow is used to predict the congestion types based on image object 
 
      source venv/bin/activate
 
-**4. Install [tensorflow](https://www.tensorflow.org) using:**
+**4. Install [tensorflow](https://www.tensorflow.org) and others using:**
 
-     pip install tensorflow
+     pip install -r requirements.txt
 
 **5. Use  traffic congestion image(supports only jpeg/jpg format). For example:**
 
@@ -36,36 +28,57 @@ Python tensorflow is used to predict the congestion types based on image object 
 **6. Example output:**
 
       high congestion (score = 0.70454)
+
+**TO DO**
+
+Create Flask REST API using (real-time) traffic image  data for prediction.
+
+Implement search query on the basis on region
       
-**Docker Hub:** 
+Make Jinja template to display parameters on index.page 
 
-https://hub.docker.com/r/taiwotman/smart-traffic
+On Index page display image with URL while adding dropdown or selection with regions
 
-Mobility as a Service(MaaS) Application for real-time traffic prediction
-
-
-**You want to be a contributor or implement your own real-time prediction?** 
+Clean template
+      
+Add Prediction features
+ 
+ Add schedule to update/refresh page
+      
+      
+**You want to be a contributor?** 
 1. Fork repository
 
      and/or
 
-2. Connect and chat me on [LinkedIn](https://www.linkedin.com/in/taiwo-o-adetiloye-ph-d-505a8023/).
+2. Connect and chat me on [LinkedIn](https://www.linkedin.com/in/taiwo-o-adetiloye-505a8023/).
 
-**For ACADEMIC PURPOSE; 
-kindly, cite our related work:**
-     
-     T. Adetiloye, A. Awasthi(2019). Multimodal Big Data Fusion for Traffic Congestion Prediction. 
-         In: Seng K., Ang L., Liew   AC., Gao J. (eds) Multimodal Analytics for Next-Generation Big Data Technologies 
-         and Applications(pg. 319-335). doi: https://doi.org/10.1007/978-3-319-97598-6_13. Springer, Cham.
-     
+**FOR ACADEMIC PURPOSE; kindly, cite our related work:**
+
      T. Adetiloye, A. Awasthi(2017). Predicting Short-Term Congested Traffic Flow on Urban Motorway Networks. 
-          In P. Samui, S.S Roy, V.E. Balas(Eds.), Handbook of Neural Computation(pg. 145–165).
-          doi: https://doi.org/10.1016/B978-0-12-811318-9.00008-9 . Academic Press.
-          
-     T. Adetiloye, A. Awasthi(2018). Traffic Condition Monitoring Using Social Media Analytics. 
-          In: Roy S., Samui P., Deo R.,Ntalampiras S. (eds) Big Data in Engineering Applications. 
-          Studies in Big Data, vol 44., Springer, Singapore.
+     In P. Samui, S.S Roy, V.E. Balas(Eds.), Handbook of Neural Computation(pg. 145–165).
+     doi: https://doi.org/10.1016/B978-0-12-811318-9.00008-9 . Academic Press.
 
-     
+3. Deploy app on google cloud engine
 
+      **gcloud app deploy**
 
+      **PS:** _deploy might take several minutes_
+
+      if error on starting reinitialize project using:
+
+      **gcloud app init**
+
+      **if this error**
+
+            ERROR: (gcloud.app.deploy) INVALID_ARGUMENT: unable to resolve source
+
+      Go to storage bucket and delete all storage.
+
+      Then redeploy you app.
+
+## Using Docker
+
+#### docker build -t taiwotman/smart-traffic:latest .
+
+#### docker run --rm -p 80:5000 taiwotman/smart-traffic:latest 

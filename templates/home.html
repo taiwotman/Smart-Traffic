@@ -1,0 +1,68 @@
+
+{% extends "base_template.html" %}
+
+{% block content %} 
+<div class="row">
+  <div class="col-xs-12 col-sm-12 col-md-12 area">
+        {% if region=='SYD_NORTH' %}
+        <h5>Live Traffic NSW(Sydney North)</h5>
+        {% elif region=='SYD_WEST' %}
+        <h5>Live Traffic NSW(Sydney West)</h5>
+        {% elif region=='SYD_SOUTH' %}
+        <h5>Live Traffic NSW(Sydney South)</h5>
+        {% elif region=='REG_NORTH' %}
+        <h5>Live Traffic NSW(Regional North)</h5>
+        {% elif region=='REG_SOUTH' %}
+        <h5>Live Traffic NSW(Regional South)</h5>
+        {% elif region=='SYD_MET' %}
+        <h5>Live Traffic NSW(Inner Sydney)</h5>
+        {% else %}
+        <h5>Live Traffic NSW</h5>
+       {% endif %}
+  </div>
+  
+</div>
+<div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-centered">
+    <div id="dropdown">
+    
+    <form class="contact">
+        <select name="region">
+            <option disabled selected value style="display:none">--Select a region--</option>
+            <option value="SYD_MET">Inner Sydney</option>
+            <option value="SYD_NORTH">Syndey North </option>
+            <option value="SYD_WEST">Syndey West </option>
+            <option value="SYD_SOUTH">Syndey South </option>
+            <option value="REG_NORTH">Regional North</option>
+            <option value="REG_SOUTH">Regional South</option>
+        </select>
+  
+       <input type="submit" value="Submit"> 
+        
+      
+  </form></div></div>
+
+ 
+  
+
+</div>
+
+
+{% for v in traffic_properties %}
+<div class ="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-centered image">
+    <span class="title">Title: {{v.title}}</span>
+    <span class="title"> View: {{v.view}}</span>
+    <span class="title">Predict: {{v.predict}}</span>
+    <span class="title">Direction: {{v.direction}}</span>
+    <img src="{{v.href}}"/>
+    
+    
+    
+  <br>
+</div></div>
+
+
+{% endfor %}
+
+{% endblock %} 
