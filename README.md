@@ -78,7 +78,7 @@ __Sample Test Case__
     headers= {
                     "Authorization": "************,
                     "Connection": "keep-alive" 
-                }
+              }
       
 ## Using Docker
 
@@ -86,7 +86,7 @@ __Sample Test Case__
 
     docker run --rm -p 80:5000 taiwotman/smart-traffic:latest 
 
-Open on [brower](localhost:80)
+Open on [brower](https://localhost:80)
 
 ### AWS EKS
 
