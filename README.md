@@ -58,7 +58,7 @@ Name changed from TensorFlowPredictCongestionTypes to Smart-Traffic
 
      source venv/bin/activate
 
-**4. Install [tensorflow](https://www.tensorflow.org) and others using:**
+**4. Pip install requirements:**
 
      pip install -r requirements.txt
  
