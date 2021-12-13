@@ -29,23 +29,57 @@ Python tensorflow is used to predict the congestion types based on image object 
 
       high congestion (score = 0.70454)
 
-**TO DO**
+**FLASK REST API **
 
-Create Flask REST API using (real-time) traffic image  data for prediction.
+***RELEASE 2.1.1***
 
-Implement search query on the basis on region
+- Create Flask REST API using (real-time) traffic image  data for prediction.
+
+- Implement search query on the basis on region
       
-Make Jinja template to display parameters on index.page 
+- Make Jinja template to display parameters on index.page 
 
-On Index page display image with URL while adding dropdown or selection with regions
+- On Index page display image with URL while adding dropdown or selection with regions
 
-Clean template
+- Clean template
       
-Add Prediction features
+- Add Prediction features
  
- Add schedule to update/refresh page
       
-      
+## Using Docker
+
+#### docker build -t taiwotman/smart-traffic:latest .
+
+#### docker run --rm -p 80:5000 taiwotman/smart-traffic:latest 
+
+### AWS EKS
+
+kubectl apply -f aws_eks/deployment.yaml smart-traffic-service created deployment.apps/smart-traffic created
+
+http://localhost:8080/api/v1/namespaces/default/services/smart-traffic-service/proxy
+     
+eksctl delete cluster --region=us-east-2 --name=smart-cluster
+
+
+## Deploy app on google cloud engine
+
+     gcloud app deploy
+
+**PS:** _deploy might take several minutes_
+
+if error on starting reinitialize project using:
+
+     gcloud app init
+
+**if error**
+
+     ERROR: (gcloud.app.deploy) INVALID_ARGUMENT: unable to resolve source
+
+Go to storage bucket and delete app storage.
+
+Then redeploy app.
+
+
 **You want to be a contributor?** 
 1. Fork repository
 
@@ -59,26 +93,5 @@ Add Prediction features
      In P. Samui, S.S Roy, V.E. Balas(Eds.), Handbook of Neural Computation(pg. 145–165).
      doi: https://doi.org/10.1016/B978-0-12-811318-9.00008-9 . Academic Press.
 
-3. Deploy app on google cloud engine
-
-      **gcloud app deploy**
-
-      **PS:** _deploy might take several minutes_
-
-      if error on starting reinitialize project using:
-
-      **gcloud app init**
-
-      **if this error**
-
-            ERROR: (gcloud.app.deploy) INVALID_ARGUMENT: unable to resolve source
-
-      Go to storage bucket and delete all storage.
-
-      Then redeploy you app.
-
-## Using Docker
-
-#### docker build -t taiwotman/smart-traffic:latest .
-
-#### docker run --rm -p 80:5000 taiwotman/smart-traffic:latest 
+**COMMERCIAL USE, UNDER PATENT LICENCE**
+Adetiloye, T. (2021). Predicting Short-Term Traffic Flow Congestion On Urban Motorway Networks (Patent No US11,195,412 B2). U.S. Patent and Trademark Office. https://rb.gy/faqg9y
