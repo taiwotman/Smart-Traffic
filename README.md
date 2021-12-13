@@ -79,8 +79,6 @@ __Sample Test Case__
                     "Authorization": "************,
                     "Connection": "keep-alive" 
                 }
-
-
       
 ## Using Docker
 
