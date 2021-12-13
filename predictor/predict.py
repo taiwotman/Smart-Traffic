@@ -1,3 +1,8 @@
+"""
+Author: Taiwo O. Adetiloye
+Date: August 22, 2018
+"""
+
 import tensorflow.compat.v1 as tf
 import sys
 import os
