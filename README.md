@@ -1,6 +1,31 @@
-# Predicting Short-Term Traffic Flow Congestion On Urban Motorway Networks 
+# Predicting Short-Term Traffic Flow Congestion On Urban Motorway Networks
 
-**HOW TO TEST**
+## DESCRIPTION 
+<p align="center"> 
+ <img width="200" height="200" src="https://github.com/taiwotman/TensorflowPredictCongestionTypes/blob/master/miscellanous/smart-traffic.png"></p>
+ <p align="center">
+<img width="200" height="200" src="https://github.com/taiwotman/TensorflowPredictCongestionTypes/blob/master/miscellanous/high-congestion.png">
+ <img width="200" height="200" src="https://github.com/taiwotman/TensorflowPredictCongestionTypes/blob/master/miscellanous/medium-congestion.png">
+ <img width="200" height="200" src="https://github.com/taiwotman/TensorflowPredictCongestionTypes/blob/master/miscellanous/low-congestion.png">
+</p>
+
+
+**RELEASE VERSION 2.1.1**
+
+- Create Flask REST API using (real-time) traffic image  data for prediction.
+
+- Implement search query based on region
+      
+- Make Jinja template to display parameters on index.page 
+
+- On Index page display image with URL while adding dropdown or selection with regions
+
+- Clean template
+      
+- Add Prediction features
+
+
+## SET UP
 
 **1. Clone git repository and `cd` into the directory**
 
@@ -19,30 +44,19 @@
 **4. Install [tensorflow](https://www.tensorflow.org) and others using:**
 
      pip install -r requirements.txt
+ 
+**5. Run**
+     python run.py
 
-**5. Use  traffic congestion image(supports only jpeg/jpg format). For example:**
+**HOW TO TEST**
+
+**6. Use  traffic congestion image(supports only jpeg/jpg format). For example:**
 
      python run.py test_image/Aut10_010.jpg
      
-**6. Example output:**
+**7. Example output:**
 
       high congestion (score = 0.70454)
-
-**FLASK REST API **
-
-***RELEASE 2.1.1***
-
-- Create Flask REST API using (real-time) traffic image  data for prediction.
-
-- Implement search query on the basis on region
-      
-- Make Jinja template to display parameters on index.page 
-
-- On Index page display image with URL while adding dropdown or selection with regions
-
-- Clean template
-      
-- Add Prediction features
  
       
 ## Using Docker
@@ -53,14 +67,18 @@
 
 ### AWS EKS
 
-kubectl apply -f aws_eks/deployment.yaml smart-traffic-service created deployment.apps/smart-traffic created
+    kubectl apply -f aws_eks/deployment.yaml 
+
+smart-traffic-service  deployment.apps/smart-traffic created
 
 http://localhost:8080/api/v1/namespaces/default/services/smart-traffic-service/proxy
-     
-eksctl delete cluster --region=us-east-2 --name=smart-cluster
+
+Delete cluster
+
+    eksctl delete cluster --region=us-east-2 --name=smart-cluster
 
 
-## Deploy app on google cloud engine
+## Google cloud
 
      gcloud app deploy
 
@@ -88,9 +106,11 @@ Then redeploy app.
 
 **FOR ACADEMIC PURPOSE; kindly, cite our related work:**
 
-     T. Adetiloye, A. Awasthi(2017). Predicting Short-Term Congested Traffic Flow on Urban Motorway Networks. 
+     , A. Awasthi(2017). Predicting Short-Term Congested Traffic Flow on Urban Motorway Networks. 
      In P. Samui, S.S Roy, V.E. Balas(Eds.), Handbook of Neural Computation(pg. 145–165).
      doi: https://doi.org/10.1016/B978-0-12-811318-9.00008-9 . Academic Press.
 
 **COMMERCIAL USE, UNDER PATENT LICENCE**
-Adetiloye, T. (2021). Predicting Short-Term Traffic Flow Congestion On Urban Motorway Networks (Patent No US11,195,412 B2). U.S. Patent and Trademark Office. https://rb.gy/faqg9y
+
+      T. Adetiloye (2021). Predicting Short-Term Traffic Flow Congestion On Urban Motorway Networks (Patent No US11,195,412 B2). U.S. Patent and Trademark Office. 
+      https://rb.gy/faqg9y
