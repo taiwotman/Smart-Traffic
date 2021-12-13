@@ -93,17 +93,15 @@ Delete cluster
 
 **PS:** _deploy might take several minutes_
 
-if error on starting reinitialize project using:
+### Likely issues
+
+1. if error on starting, reinitialize project using:
 
      gcloud app init
 
-**if error**
+2. ERROR: (gcloud.app.deploy) INVALID_ARGUMENT: unable to resolve source
 
-     ERROR: (gcloud.app.deploy) INVALID_ARGUMENT: unable to resolve source
-
-Go to storage bucket and delete app storage.
-
-Then redeploy app.
+   Go to storage bucket and delete app storage. Then redeploy app.
 
 
 **You want to be a contributor?** 
