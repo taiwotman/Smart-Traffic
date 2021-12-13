@@ -57,7 +57,16 @@
 **7. Example output:**
 
       high congestion (score = 0.70454)
- 
+
+## AUTHORIZATION KEY
+***JSON PARSER***
+
+    headers= {
+                    "Authorization": "************,
+                    "Connection": "keep-alive" 
+                }
+
+
       
 ## Using Docker
 
