@@ -41,9 +41,7 @@ Name changed from TensorFlowPredictCongestionTypes to Smart-Traffic
 
 **1. Clone git repository and `cd` into the directory**
 
-     git clone https://github.com/taiwotman/TensorflowPredictCongestionTypes.git
-     
-     cd TensorflowPredictCongestionTypes
+     git clone https://github.com/taiwotman/Smart-Traffic.git
 
 **2. Set up [virtualenv](https://virtualenv.pypa.io/en/stable/) with directory _venv_** 
 
