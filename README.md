@@ -67,7 +67,7 @@
 
 ### AWS EKS
 
-   kubectl apply -f aws_eks/deployment.yaml 
+    kubectl apply -f aws_eks/deployment.yaml 
 
 smart-traffic-service  deployment.apps/smart-traffic created
 
