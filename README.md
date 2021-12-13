@@ -122,7 +122,8 @@ Delete cluster
 4. No result return- Obtain authorization key
 
 
-**You want to be a contributor?** 
+### You want to be a contributor?
+
 1. Fork repository
 
      and/or
