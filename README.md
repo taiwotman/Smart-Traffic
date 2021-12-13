@@ -46,6 +46,7 @@ Name changed from TensorFlowPredictCongestionTypes to Smart-Traffic
 
 
 ## SET UP
+### LOCAL ENVIRONMENT
 
 **1. Clone git repository and `cd` into the directory**
 
@@ -90,7 +91,7 @@ __Sample Test Case__
                     "Connection": "keep-alive" 
               }
       
-## Using Docker
+### DOCKER
 
     docker build -t taiwotman/smart-traffic:latest .
 
@@ -111,7 +112,7 @@ Delete cluster
     eksctl delete cluster --region=us-east-2 --name=smart-cluster
 
 
-## Google cloud
+### GCP
 
      gcloud app deploy
 
@@ -131,13 +132,13 @@ Delete cluster
 
 4. No result return- Obtain authorization key
 
-### Acknowledgments
+### ACKNOWLEGDMENTS
 
 So much gratitude to [New South Wales Transport Agency](www.transport.nsw.gov.au) for the open live traffic data API
 and Google for the [Tensorflow](https://www.tensorflow.org/). Without opensource this work would not have been derived.
 
 
-### You want to be a contributor?
+### WANT TO BE CONTRIBUTOR?
 
 1. Fork repository
 
