@@ -134,7 +134,7 @@ Delete cluster
 ### Credit
 
 So much gratitude to [New South Wales Transport Agency](www.transport.nsw.gov.au) for the open live traffic data API
-and Google for the Tensorflow. Without opensource this work would not have been derived.
+and Google for the [Tensorflow](https://www.tensorflow.org/). Without opensource this work would not have been derived.
 
 
 ### You want to be a contributor?
