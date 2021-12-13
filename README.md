@@ -33,7 +33,7 @@ Name changed from TensorFlowPredictCongestionTypes to Smart-Traffic
       
 - Make Jinja template to display parameters on index.page 
 
-- On Index page display image with URL while adding dropdown or selection with regions
+- On Index page, display image with URL while adding dropdown selections with regions
 
 - Clean template
       
