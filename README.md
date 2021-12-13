@@ -19,6 +19,9 @@
 ![WTForms](https://img.shields.io/badge/WTForms-v2.1-blue.svg?longCache=true&logo=python&style=flat-square&logoColor=white&colorB=5e81ac&colorA=4c566a)
 ![Werkzeug](https://img.shields.io/badge/Werkzeug-v0.7-blue.svg?longCache=true&logo=python&style=flat-square&logoColor=white&colorB=5e81ac&colorA=4c566a)
 
+### REPOSITORY
+Name changed from TensorFlowPredictCongestionTypes to Smart-Traffic
+
 **RELEASE VERSION 2.1.1**
 
 - Create Flask REST API using (real-time) traffic image  data for prediction.
@@ -57,7 +60,7 @@
 **5. Run**
      python run.py
 
-_Sample Test Case_
+__Sample Test Case__
 
 **6. Use  traffic congestion image(supports only jpeg/jpg format). For example:**
 
@@ -68,7 +71,7 @@ _Sample Test Case_
       high congestion (score = 0.70454)
 
 ## Authorization Key
-***JSON PARSER***
+***Json Parser***
 
     headers= {
                     "Authorization": "************,
@@ -79,9 +82,9 @@ _Sample Test Case_
       
 ## Using Docker
 
-#### docker build -t taiwotman/smart-traffic:latest .
+   docker build -t taiwotman/smart-traffic:latest .
 
-#### docker run --rm -p 80:5000 taiwotman/smart-traffic:latest 
+   docker run --rm -p 80:5000 taiwotman/smart-traffic:latest 
 
 ### AWS EKS
 
