@@ -1,0 +1,15 @@
+### Amazon EKS
+
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+metadata:
+  name: smart-cluster
+  region: us-east-2
+managedNodeGroups:
+  - name: job-manager
+    instanceType: t3a.micro
+    desiredCapacity: 2
+    minSize: 2
+    maxSize: 10
+    tags:
+      'Project': 'SmartTraffic'

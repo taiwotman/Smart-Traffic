@@ -1,0 +1,32 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: smart-traffic-service
+spec:
+  selector:
+    app: smart-traffic
+  ports:
+  - protocol: "TCP"
+    port: 6000
+    targetPort: 5000
+  type: LoadBalancer
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: smart-traffic
+spec:
+  selector:
+    matchLabels:
+      app: smart-traffic
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: smart-traffic
+    spec:
+      containers:
+      - name: smart-traffic
+        image: 715763361732.dkr.ecr.us-east-2.amazonaws.com/smart-traffic
+        ports:
+        - containerPort: 5000
