@@ -1,22 +1,20 @@
+"""
+Author: Taiwo O. Adetiloye
+Date: August 22, 2018
+"""
+
 from flask import Flask,render_template,request, flash
 import json
 from json_parser import traffic_parser
 import logging
 from predictor import predict
 
-# using SendGrid's Python Library - https://github.com/sendgrid/sendgrid-python
-# import sendgrid
-# from forms import ContactForm
-
-
 app = Flask(__name__)
-
-
 
 app.config['DEBUG'] = True
 
 # change this to your own value 
-app.secret_key = 'TL_m#p12LetMeIn123'
+app.secret_key = '*****'
 
 @app.route("/")
 def index():
@@ -50,25 +48,6 @@ def contact():
  
 
   if request.method == 'POST':
-    # if form.validate() == False:
-    #   flash('All fields are required.')
-    #   return render_template('contact.html', form=form)
-    # else:
-    #     sg = sendgrid.SendGridClient("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")
-    #     message = sendgrid.Mail()
-
-    #     message.add_to("taiwo.adetiloye@gmail.com")
-    #     message.set_from("admin@smarttraffic.com")
-    #     message.set_subject(form.subject.data)
-
-    #     body = """
-    #     From: %s <%s> 
-    #     \n Message: %s
-    #     """ % (form.name.data, form.email.data, form.message.data)
-
-    #     message.set_html(body)
-    #     sg.send(message)
- 
 
         return render_template('contact.html', success=True)
 
