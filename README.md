@@ -1,5 +1,6 @@
 # Predicting Short-Term Traffic Flow Congestion On Urban Motorway Networks
 
+## DESCRIPTION 
 <p align="center"> 
  <img width="200" height="200" src="https://github.com/taiwotman/TensorflowPredictCongestionTypes/blob/master/miscellanous/smart-traffic.png"></p>
  <p align="center">
@@ -9,7 +10,7 @@
 </p>
 
 
-**RELEASE 2.1.1**
+**RELEASE VERSION 2.1.1**
 
 - Create Flask REST API using (real-time) traffic image  data for prediction.
 
@@ -24,7 +25,7 @@
 - Add Prediction features
 
 
-
+## SET UP
 
 **1. Clone git repository and `cd` into the directory**
 
