@@ -10,6 +10,15 @@
 </p>
 
 
+### Dependencies
+![Python](https://img.shields.io/badge/Python-v3.7-blue.svg?logo=python&longCache=true&logoColor=white&colorB=5e81ac&style=flat-square&colorA=4c566a)
+![Tensorflow](https://img.shields.io/badge/Tensorflow-v2.5.0rc0-blue.svg?longCache=true&logo=python&style=flat-square&logoColor=white&colorB=5e81ac&colorA=4c566a)
+![Flask](https://img.shields.io/badge/Flask-v1.1.1-blue.svg?longCache=true&logo=flask&style=flat-square&logoColor=white&colorB=5e81ac&colorA=4c566a)
+![Urllib3](https://img.shields.io/badge/Urllib3-v1.24.3-blue.svg?longCache=true&logo=python&style=flat-square&logoColor=white&colorB=5e81ac&colorA=4c566a)
+![Numpy](https://img.shields.io/badge/Numpy-v1.13.3-blue.svg?longCache=true&logo=python&style=flat-square&logoColor=white&colorB=5e81ac&colorA=4c566a)
+![WTForms](https://img.shields.io/badge/WTForms-v2.1-blue.svg?longCache=true&logo=python&style=flat-square&logoColor=white&colorB=5e81ac&colorA=4c566a)
+![Werkzeug](https://img.shields.io/badge/Werkzeug-v0.7-blue.svg?longCache=true&logo=python&style=flat-square&logoColor=white&colorB=5e81ac&colorA=4c566a)
+
 **RELEASE VERSION 2.1.1**
 
 - Create Flask REST API using (real-time) traffic image  data for prediction.
