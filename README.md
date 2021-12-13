@@ -150,12 +150,12 @@ So much gratitude to [New South Wales Transport Agency](www.transport.nsw.gov.au
  In P. Samui, S.S Roy, V.E. Balas(Eds.), Handbook of Neural Computation(pg. 145–165).
  doi: https://doi.org/10.1016/B978-0-12-811318-9.00008-9 . Academic Press.
 
-### COMMERCIAL LICENSE
+### COMMERCIAL USE LICENSE
 
  T. Adetiloye (2021). Predicting Short-Term Traffic Flow Congestion On Urban Motorway Networks (Patent No US11,195,412 B2). U.S. Patent and Trademark Office. 
  https://rb.gy/faqg9y
  
- ### NON-COMMERCIAL MIT LICENSE
+ ### NON-COMMERCIAL USE MIT LICENSE
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
