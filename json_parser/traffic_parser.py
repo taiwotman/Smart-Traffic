@@ -1,3 +1,9 @@
+"""
+Author: Taiwo O. Adetiloye
+Date: August 18, 2018
+"""
+
+
 import json
 from predictor import predict
 import ssl
