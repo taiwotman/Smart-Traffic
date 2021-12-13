@@ -83,7 +83,7 @@ __Sample Test Case__
 
       high congestion (score = 0.70454)
 
-## Authorization Key
+## Authorization header
 ***Json Parser***
 
     headers= {
