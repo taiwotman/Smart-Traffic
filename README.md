@@ -130,7 +130,7 @@ Delete cluster
 
    Go to storage bucket and delete app storage. Then redeploy app.
    
-3. Latency -  Takes an average of 1 min to return prediction on the local environment.
+3. Latency -  Takes an average of 1 min to return predictions on the local environment.
 
 4. No result return- Obtain authorization key
 
