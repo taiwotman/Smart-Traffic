@@ -132,7 +132,7 @@ Delete cluster
    
 3. Latency -  Takes an average of 1 min to return predictions on the local environment.
 
-4. No result return- Obtain authorization key
+4. No results return- Obtain authorization key
 
 ### ACKNOWLEDGEMENTS
 
