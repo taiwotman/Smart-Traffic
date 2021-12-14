@@ -14,19 +14,12 @@ except ImportError:
 import numpy as np
 
 
-
 def tensorflow_pred(imageUrl):
      
     #suppress TF log-info messages - remove to display TF logs 
     os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
     response = urlopen(imageUrl)
     image_data = response.read()
-
-    
-    
-     
-    # Read in the image_data
-    # image_data = tf.gfile.FastGFile(image_path, 'rb').read()
 
     # Loads label file, strips off carriage return
     label_lines = [line.rstrip() for line 
