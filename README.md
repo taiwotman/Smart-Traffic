@@ -86,7 +86,8 @@ __Sample Test Case__
 
 
 
-## Authorization header
+### AUTHORIZATION HEADER
+
 ***Json Parser***
 
     headers= {
