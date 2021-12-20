@@ -49,7 +49,7 @@ Mobility as a Service(MaaS) Application for real-time traffic prediction
 
      and/or
 
-2. Connect and chat me on [LinkedIn](https://www.linkedin.com/in/taiwo-o-adetiloye-ph-d-505a8023/).
+2. Send a [message](https://taiwotman.github.io/#contact).
 
 **FOR ACADEMIC PURPOSE; 
 kindly, cite our related work:**
