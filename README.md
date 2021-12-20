@@ -149,7 +149,7 @@ Without opensource contributions this work would not have been derived.
 
      and/or
 
-2. Connect and chat me on [LinkedIn](https://www.linkedin.com/in/taiwo-o-adetiloye-505a8023/).
+2. Message me [here](https://taiwotman.github.io/#contact).
 
 **FOR ACADEMIC PURPOSE; kindly, cite our related work:**
 
