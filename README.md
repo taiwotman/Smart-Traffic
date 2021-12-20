@@ -149,7 +149,7 @@ Without opensource contributions this work would not have been derived.
 
      and/or
 
-2. Message me [here](https://taiwotman.github.io/#contact).
+2. Send a [message](https://taiwotman.github.io/#contact).
 
 **FOR ACADEMIC PURPOSE; kindly, cite our related work:**
 
