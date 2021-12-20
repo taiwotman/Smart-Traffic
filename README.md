@@ -88,7 +88,7 @@ __Sample Test Case__
 
 ### AUTHORIZATION HEADER
 
-***Json Parser***
+***In json_parser***
 
     headers= {
                     "Authorization": "************",
