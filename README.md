@@ -74,7 +74,7 @@ __Sample Test Case__
  <img width="500" height="500" src="https://github.com/taiwotman/Smart-Traffic/blob/master/miscellanous/Architecture%20of%20real-time%20prediction.png">
 </p>
 
-**6. To implement the following test, git clone the [development branch](https://github.com/taiwotman/Smart-Traffic/tree/development).**
+**6. To implement the following test, use the [development branch](https://github.com/taiwotman/Smart-Traffic/tree/development).**
 
 **7. Run the following python command with the  traffic congestion image(supports only jpeg/jpg format) as argument. For example:**
 
