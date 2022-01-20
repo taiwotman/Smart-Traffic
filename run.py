@@ -1,8 +1,3 @@
-"""
-Author: Taiwo O. Adetiloye
-Date: August 22, 2018
-"""
-
 from flask import Flask,render_template,request, flash
 import json
 from json_parser import traffic_parser
@@ -18,18 +13,26 @@ app.secret_key = '*****'
 
 @app.route("/")
 def index():
-    
-    region = request.args.get('region')
-    
-    # if not region:
-    #     region= DEFAULTS['region']
-      
-    traffic = traffic_parser.get_traffic(region)
-    return render_template("home.html", traffic_properties = traffic, region=region)
+    return render_template("index.html")
+
 
 @app.route("/about")
 def about():
     return render_template("about.html")
+
+
+@app.route("/contact", methods=['GET','POST'])
+def contact():
+    if request.method == "POST":
+        #Do something with data
+        print(request.form)
+        return render_template("contact.html")
+
+    return render_template("contact.html")
+
+@app.route("/demo", methods=['GET','POST'])
+def demo():
+    return render_template("demo.html")
 
 
 @app.errorhandler(500)
@@ -41,27 +44,9 @@ def server_error(e):
     """.format(e), 500
 
 
-@app.route('/contact', methods=['GET', 'POST'])
-def contact():
-  # form = ContactForm()
-
- 
-
-  if request.method == 'POST':
-
-        return render_template('contact.html', success=True)
-
-  elif request.method == 'GET':
-    return render_template('contact.html', success=True)
-
-
-
 if __name__ == '__main__':
     # app.run(debug=True, use_reloader=True)
      # This is used when running locally. Gunicorn is used to run the
      # app on Google App Engine. See entrypoint in app.yaml.
      #app.run(debug=True, use_reloader=True)
-     app.run(debug=True, host='0.0.0.0', port=5000)
-    
-
-
+     app.run(debug=True, host='0.0.0.0', port=8001)

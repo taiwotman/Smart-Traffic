@@ -1,4 +1,5 @@
 Flask==2.0.2
+python-dotenv==0.19.2
 urllib3==1.24.3
 Werkzeug>=0.7
 WTForms==2.1 

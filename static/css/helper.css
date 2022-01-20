@@ -1,0 +1,198 @@
+/*-------------------------------------------------------
+    [ Preloader style 1 ]
+-------------------------------------------------------*/
+
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  z-index: 9999999999999;
+}
+
+.loading .middle {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+
+.lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+}
+.lds-ellipsis div {
+  position: absolute;
+  top: 27px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: #fff;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+  left: 6px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+  left: 6px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+  left: 26px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+  left: 45px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(19px, 0);
+  }
+}
+
+/*-------------------------------------------------------
+    [ Preloader style 2 ]
+-------------------------------------------------------*/
+
+.loading {
+  /* background: #fff; */
+}
+
+.traffic-lights {
+  padding: 10px 25px;
+  background: #222;
+  border-radius: 35px;
+  border: 15px solid #111;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  z-index: 100;
+}
+
+.light {
+  border-top: 0.8em solid black;
+  border-radius: 50%;
+  background: teal;
+  width: 60px;
+  height: 60px;
+  margin: 7px auto;
+}
+
+.shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 30px 0px 0px 30px;
+}
+
+@keyframes red {
+  0% {
+    background: #111;
+  }
+  2%,
+  40% {
+    background: #c0392b;
+  }
+  42%,
+  100% {
+    background: #111;
+  }
+}
+
+@keyframes amber {
+  0%,
+  20% {
+    background: #111;
+  }
+  22%,
+  40% {
+    background: #fbc00c;
+  }
+  42%,
+  80% {
+    background: #111;
+  }
+  82%,
+  100% {
+    background: #fbc00c;
+  }
+}
+
+@keyframes green {
+  0%,
+  40% {
+    background: #111;
+  }
+  42%,
+  80% {
+    background: #1abc9c;
+  }
+  82%,
+  100% {
+    background: #111;
+  }
+}
+
+.red {
+  animation: red 3s linear infinite;
+}
+
+.amber {
+  animation: amber 3s linear infinite;
+}
+
+.green {
+  animation: green 3s linear infinite;
+}
+
+.traffic-lights::before {
+  content: "";
+  width: 5em;
+  height: 3em;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #111;
+  z-index: 0;
+}
+.traffic-lights::after {
+  content: "";
+  width: 150px;
+  height: 20px;
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #111;
+  z-index: 0;
+}

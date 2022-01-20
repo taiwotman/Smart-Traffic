@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <title>
-            Smart Traffic
-        </title>
-    
-        <meta content="smart traffic" name="description" />
-        <link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.min.css') }}" />
-    
-        <link rel="stylesheet" href="{{url_for('static', filename='css/all.css') }}" /> 
-    
-        <link rel="stylesheet" href="{{url_for('static', filename='css/circular-std.css') }}" />
-    
-        <link rel="stylesheet" href="{{url_for('static', filename='css/helper.css') }}"> 
-    
-        <link rel="stylesheet" href="{{url_for('static', filename='css/style.css') }}" /> 
-    </head>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>
+        Smart Traffic
+    </title>
+
+    <meta content="smart traffic" name="description" />
+    <link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.min.css') }}" />
+
+    <link rel="stylesheet" href="{{url_for('static', filename='css/all.css') }}" /> 
+
+    <link rel="stylesheet" href="{{url_for('static', filename='css/circular-std.css') }}" />
+
+    <link rel="stylesheet" href="{{url_for('static', filename='css/helper.css') }}"> 
+
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css') }}" /> 
+</head>
 
 <body>
     <!-- <div class="loading">
@@ -32,7 +32,7 @@
             <div class="light red"></div>
             <div class="light amber"></div>
             <div class="light green"></div>
-        </div>
+          </div>
     </div>
     <header>
         <div class="nav-menu">
@@ -56,7 +56,7 @@
                                         <a class="nav-link text-dark" href="{{ url_for('index')}}">Home</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link text-dark" href="/demo.html">Demo</a>
+                                        <a class="nav-link text-dark" href="{{ url_for('demo')}}">Demo</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link text-dark" href="{{ url_for('about')}}">About</a>
@@ -72,14 +72,47 @@
             </div>
         </div>
 
-        <div class="modal fade" id="contactmodal" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+        <div class="main-title__alt header__bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="main-banner_md">
+                            <img src="{{url_for('static', filename='images/Pedestrian-crossing.svg') }}" class="img-fluid" alt="#" /> 
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-6">
+                        <div class="hero-title text-center text-md-left">
+                            <h1>
+                                Traffic<br />
+                                made easy.
+                            </h1>
+                            <p>Hello, We are Smart Traffic</p>
+
+                            <div class="add-btn pricing-btn_wrap">
+                                <a href="#" class="btn btn-success">Get Started</a>
+                            </div>
+                            <div class="add-btn pricing-btn_wrap ml-2">
+                                <a href="#" data-toggle="modal" data-target="#contactmodal" class="btn btn-success">Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-style d-none d-md-block">
+                <img src="{{url_for('static', filename='images/bg-1.png') }}" class="img-fluid" alt="#" /> 
+            </div>
+        </div>
+
+        <div class="modal fade" id="contactmodal" tabindex="-1" role="dialog" aria-labelledby=""
+            aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-dialog-zoom" role="document">
                 <div class="modal-content">
                     <div class="modal-body">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">×</span>
                         </button>
-                        <form class="quote-form" action="" method="post">
+                        <form class="quote-form"
+                            action="" method="post">
                             <h5 class="text-center mt-3 mb-4">Contact us today!</h5>
                             <div class="form-group">
                                 <div class="row">
@@ -98,8 +131,7 @@
                                     placeholder="Email Address*" required />
                             </div>
                             <div class="form-group">
-                                <textarea name="message" id="pac-input" cols="30" rows="6" class="form-control"
-                                    placeholder="Message*"></textarea>
+                                <textarea name="message" id="pac-input" cols="30" rows="6" class="form-control" placeholder="Message*"></textarea>
                             </div>
                             <button type="submit" class="btn btn-success w-100" id="js-contact-btn">
                                 <strong> Send Message </strong>
@@ -112,129 +144,117 @@
             </div>
         </div>
 
-        <div class="pt-5 px-2">
+        <div class="space bg-image">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="">
-                            <h2>About Smart Traffic</h2>
-                            <!-- <p>Great for individuals and business</p> -->
+                        <div class="center-title">
+                            <h2>A new take on Traffic</h2>
+                            <p>Great for individuals and business</p>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-12 col-lg-12">
-                        <h5>Brief description</h5>
-                        <p>
-                            Traffic congestion has become a major issue all around the world, thus policymakers and city
-                            managers have huge challenges to improve the quality of life in urban areas. It is a widely
-                            occurring traffic phenomenon in metropolitan areas due to the increasing number of road
-                            vehicle users and is characterized by slower vehicles’ speeds, longer travel times, queues
-                            and, sometimes, complete paralysis of the traffic network. Smart-Traffic is Mobility as a
-                            Service application for real-time traffic prediction.
-                        </p>
-                        <p>
-                            This proof of concept relies on the work of Dr. Taiwo O. Adetiloye:
-                        </p>
-                        <p>
-                            <b>Adetiloye</b>, Taiwo Olubunmi (2018), Predicting Short-Term Traffic Congestion on
-                            Urban Motorway Networks. Ph.D. thesis,
-                            <a href="https://spectrum.library.concordia.ca/985249/"
-                                target="blank">https://spectrum.library.concordia.ca/985249/</a>, Concordia University,
-                            Montreal, QC, Canada
-                        </p>
-                        <p>The following three-steps are required for setup:</p>
-                        <p>
-                        <ol>
-                            <li>Install Docker<br><br></li>
-
-                            <li>Execute the following docker commands from the command line:</li>
-                            <p
-                                style="background-color: rgb(171, 179, 196); color: #464646;  padding-left:10px; padding-top:10px ; padding-bottom:10px; border-radius: 5px;">
-                                docker poll taiwotman/smart-traffic:beta1.1 <br>
-
-                                docker run --rm -p &lt;desired-port&gt;:5000 &lt;image-id&gt;
-                            </p>
-                            <p>
-                                For example:
-                            </p>
-                            <p
-                                style="background-color:rgb(171, 179, 196); color: #464646; padding-left:10px; padding-top:10px; padding-bottom:10px; border-radius: 5px;">
-                                docker pull taiwotman/smart-traffic:latest
-
-                                docker run --rm -p 80:5000 taiwotman/smart-traffic:latest</p>
-                            <li>On your browser, open: <a href="http://localhost:80" target="blank">
-                                    http://localhost:80</a></li>
-                        </ol>
-                        </p>
-                        <h6>Note:</h6>
-                        <p>
-                            Due to latency, the API request takes an average of 1min.
-                        </p>
-                        <p>
-                            Kindly, exercise some patience to complete page load with predictions after the submit
-                            button is pressed.
-                        </p>
-                        <p>
-                            Sample codes on Github repository: <a
-                                href="https://github.com/taiwotman/TensorflowPredictCongestionTypes"
-                                target="blank">https://github.com/taiwotman/TensorflowPredictCongestionTypes</a>
-                        </p>
-                        <br>
-                        <h5>Credit</h5>
-                        <p>
-                            So much gratitude to New South Wales Transport Agency @ transport.nsw.gov.au for the open
-                            live traffic data API:
-                        </p>
-                        <p>
-                            <a href="https://www.livetraffic.com/desktop.html#cameraview"
-                                target="blank">https://www.livetraffic.com/desktop.html#cameraview</a>
-                        </p>
-                        <p>
-                            <a href="https://data.nsw.gov.au/data/dataset"
-                                target="blank">https://data.nsw.gov.au/data/dataset</a>
-                        </p>
-                        <p><b>Developer:</b> Taiwo O. Adetiloye, Ph.D.</p>
-                        <p><b>Website:</b><a href="https://taiwotman.github.io" target="blank">
-                                https://taiwotman.github.io</a>
-                        </p>
-                        <br>
-                        <h5>MIT License</h5>
-
-                        <p>
-                            Permission is hereby granted, free of charge, to any person obtaining a copy of this
-                            software and associated
-                            documentation files (the "Software"), to deal in the Software without restriction, including
-                            without limitation
-                            the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
-                            of the Software, and
-                            to permit persons to whom the Software is furnished to do so, subject to the following
-                            conditions:
-
-                            The above copyright notice and this permission notice shall be included in all copies or
-                            substantial portions of
-                            the Software.
-                        </p>
-                        <p style="font-size: small;">
-                            THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
-                            INCLUDING BUT NOT LIMITED TO
-                            THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
-                            NO EVENT SHALL THE
-                            AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN
-                            AN ACTION OF
-                            CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
-                            USE OR OTHER
-                            DEALINGS IN THE SOFTWARE.
-                        </p>
+                    <div class="col-md-12 col-lg-7 ml-auto">
+                        <div class="traffic-title_wrap traffic-title_wrap2">
+                            <div class="traffic-type d-flex align-items-center">
+                                <img src="{{url_for('static', filename='images/tick.png') }}" alt="#" /> 
+                                <div class="traffic-type_title">
+                                    <h6>Comprehensive traffic</h6>
+                                    <p>
+                                        Dynamically repurpose e-business users rather than
+                                        granular products.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="traffic-type d-flex align-items-center">
+                                <img src="{{url_for('static', filename='images/tick.png') }}" alt="#" /> 
+                                <div class="traffic-type_title">
+                                    <h6>Support is just a call away</h6>
+                                    <p>
+                                        Rapidiously customize value-added platforms compliant
+                                        action items.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="traffic-type d-flex align-items-center">
+                                <img src="{{url_for('static', filename='images/tick.png') }}" alt="#" />
+                                <div class="traffic-type_title">
+                                    <h6>Say goodbye to paperwork.</h6>
+                                    <p>
+                                        Globally deliver economically sound communities
+                                        relationships.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-
+            <div class="banner-img-3">
+                <img src="{{url_for('static', filename='images/City-driver.svg') }}" width="680" class="img-fluid" alt="#" /> 
+            </div>
             <div class="bg-style2">
                 <img src="{{url_for('static', filename='images/bg-2.png') }}" class="img-fluid" alt="#" /> 
             </div>
         </div>
     </header>
+
+    <section class="space">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="center-title">
+                        <h2>How It Works</h2>
+                        <p>Easy as One, Two, Three</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-lg-4">
+                    <div class="item-box howit-block">
+                        <div class="item-icon color1">
+                            <span>1</span>
+                        </div>
+                        <h6>Step 1</h6>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                            quis nunc vitae velit rutrum suscipit non et eros.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-4">
+                    <div class="item-box howit-block_af">
+                        <div class="item-icon color2">
+                            <span>2</span>
+                        </div>
+                        <h6>Step 2</h6>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                            quis nunc vitae velit rutrum suscipit non et eros.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-4">
+                    <div class="item-box">
+                        <div class="item-icon color3">
+                            <span>3</span>
+                        </div>
+                        <h6>Step 3</h6>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                            quis nunc vitae velit rutrum suscipit non et eros.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-lg-12 text-center">
+                    <a href="/demo.html" class="btn btn-success px-5 ">Try the Demo</a> 
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section class="add-section clearfix collapse-wrap mt-5">
         <div class="container">

@@ -1,91 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
 
-{% extends "base_template.html" %}
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>
+        Smart Traffic
+    </title>
 
-{% block content %}
+    <meta content="smart traffic" name="description" />
+    <link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.min.css') }}" />
 
+    <link rel="stylesheet" href="{{url_for('static', filename='css/all.css') }}" /> 
 
+    <link rel="stylesheet" href="{{url_for('static', filename='css/circular-std.css') }}" />
 
-<div class ="row " style="justify-content: center;display: flex;flex-direction: column; align-items: center;
-margin-top: 40px;" > 
-  <!--
-    <div class="col-xs-12 col-sm-12 col-md-12 centered" >
+    <link rel="stylesheet" href="{{url_for('static', filename='css/helper.css') }}"> 
 
-      {% if success %}
-        <p class="message">Thank you for your message. We'll get back to you shortly.</p>
-      
-      {% else %}  
-        {% for message in form.name.errors %}
-          <div class="flash">{{ message }}</div>
-        {% endfor %}
-        
-        {% for message in form.email.errors %}
-          <div class="flash">{{ message }}</div>
-        {% endfor %}
-        
-        {% for message in form.subject.errors %}
-          <div class="flash">{{ message }}</div>
-        {% endfor %}
-        
-        {% for message in form.message.errors %}
-          <div class="flash">{{ message }}</div>
-        {% endfor %}
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css') }}" />
+    <style>
+        @media only screen and (max-width: 600px) { 
+            .hide-sm {
+                display: none;
+            }
+        }
+    </style>
+</head>
 
-        
-
-   
-        <form action="{{ url_for('contact') }}" method=post class="form">
-          {{ form.hidden_tag() }}
-          
-          {{ form.name.label }}{{ form.name }}
-          
-          {{ form.email.label }}
-          {{ form.email }}
-          
-          {{ form.subject.label }}
-          {{ form.subject }}
-          
-          {{ form.message.label }}
-          {{ form.message }}
-         
-          {{ form.submit }}
-         
-         
-       
-        </form>
-        
-      
-      {% endif %} -->
-
-      <form id="contactForm"  class="single-form quate-form wow col-md-6" action="https://formspree.io/mwkrbzyg" method="POST">
-        <div id="msgSubmit" class="h3 text-center hidden"></div>
-       
-          <div class="col-md-6 col-sm-12 form-group">
-            <input name="firstname" class="contact-name form-control" id="name" type="text" placeholder="First Name" required="" >
-          </div>
-         <br>
-         <div class="col-md-6 col-sm-12 form-group">
-          <input name="lastname" class="contact-name form-control" id="name" type="text" placeholder="Last Name" required="" >
+<body>
+    <!-- <div class="loading">
+        <div class="text-center middle">
+            <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
         </div>
-          <br>
-          <div class="col-sm-12 form-group">
-            <input name="email" class="contact-subject form-control" id="email" type="email" placeholder="Your Email" required="">
-          </div>
-          <br>
-          <div class="col-sm-12 form-group">
-            <textarea name="message" class="contact-message form-control" id="message" rows="6" placeholder="Your Message" required=""></textarea>
-          </div>
-
-          <!-- Subject Button -->
-          <div class=" btn-form col-sm-12 text-center">
-            <button type="submit" style="background-color: rgb(171, 179, 196);" id="form-submit">Send Message</button>
-            <p id="my-form-status" class="text-success"></p>
-          </div>
-       
-      </form>
+    </div> -->
+    <div class="loading">
+        <div class="traffic-lights shape">
+            <div class="shadow"></div>
+            <div class="light red"></div>
+            <div class="light amber"></div>
+            <div class="light green"></div>
+        </div>
     </div>
-    <script src="{{ url_for('static', filename='js/mail.js') }}" type="text/javascript"></script>
-    <!-- <link href="{{url_for('static',filename='css/bootstrap.min.css') }}"  rel="stylesheet"></link> -->
-    
-  
-{% endblock %} 
+    <header>
+        <div class="nav-menu">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <nav class="navbar navbar-expand-lg navbar-light">
+                            <a class="navbar-brand" href="#">
+                                <!-- <img src="images/logo1.png" alt="#" /> -->
+                                <b>Smart Traffic </b>
+                            </a>
+                            <button class="navbar-toggler navbar-toggler_second" type="button" data-toggle="collapse"
+                                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <i class="fas fa-bars"></i>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
+                                <ul class="navbar-nav ml-auto">
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark" href="{{ url_for('index')}}">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark" href="{{ url_for('demo')}}">Demo</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark" href="{{ url_for('about')}}">About</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark" href="{{ url_for('contact')}}">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <section class="space">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="center-title">
+                        <h2>Smart Traffic</h2>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-5 hide-sm">
+                            <img src="{{url_for('static', filename='images/Mention.svg') }}" alt="" srcset=""> 
+                        </div>
+                        <div class="col-md-7">
+                            <form class="quote-form p-lg-5" action="" method="post">
+                                <h5 class="text-left mt-3 mb-4">Contact us today!</h5>
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-sm-6 mt-3">
+                                            <input type="text" class="form-control" id="first_name" name="first_name"
+                                                placeholder="First Name*" required />
+                                        </div>
+                                        <div class="col-sm-6 mt-3">
+                                            <input type="text" class="form-control" id="last_name" name="last_name"
+                                                placeholder="Last Name*" required />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="email" name="email"
+                                        placeholder="Email Address*" required />
+                                </div>
+                                <div class="form-group">
+                                    <textarea name="message" id="pac-input" cols="30" rows="6" class="form-control"
+                                        placeholder="Message*"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-success w-100" id="js-contact-btn">
+                                    <strong> Send Message </strong>
+                                </button>
+                                <div id="js-contact-result" data-success-msg="Success, We will get back to you soon"
+                                    data-error-msg="Oops! Something went wrong"></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="footer-title">
+                        <h6>ADDRESS</h6>
+                        <p>
+                            400-401 West Georgia Street<br />
+                            Vancouver, BC, Canada, V6B 5A1<br />
+                            +1 (123) 456 7890<br />
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-title">
+                        <h6>FOLLOW US</h6>
+                        <ul>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Linkedin</a></li>
+                            <li><a href="#">Instagram</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="footer-title">
+                        <h6>FOLLOW US</h6>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus natus dolore, sapiente
+                            quidem nesciunt commodi?
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="copyright">
+                        <p>Copyright © 2022. Smart Traffic</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="{{url_for('static', filename='js/jquery-3.4.1.min.js') }}"></script>
+    <script src="{{url_for('static', filename='js/popper.min.js') }}"></script>
+    <script src="{{url_for('static', filename='js/bootstrap.min.js') }}"></script>
+
+    <script src="{{url_for('static', filename='js/validate.js') }}"></script> 
+    <script src="{{url_for('static', filename='js/custom.js') }}"></script> 
+</body>
+
+
+</html>

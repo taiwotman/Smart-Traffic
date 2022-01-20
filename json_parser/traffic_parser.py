@@ -5,6 +5,7 @@ Date: August 18, 2018
 
 
 import json
+import os
 from predictor import predict
 import ssl
 ssl._create_default_https_context = ssl._create_unverified_context
@@ -17,7 +18,7 @@ def get_traffic(query):
     
     try:
             headers= {
-                "Authorization": "************",
+                "Authorization": os.environ.get("AUTH_KEY"),
                 "Connection": "keep-alive" 
             }
 
