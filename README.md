@@ -120,7 +120,7 @@ Delete cluster
 
      gcloud app deploy
 
-**PS:** _deploy might take several minutes_
+**PS:** _deploy might take few minutes_
 
 ### Likely issues
 
