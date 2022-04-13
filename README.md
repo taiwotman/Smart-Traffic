@@ -28,7 +28,6 @@ A system and method for the prediction of vehicle traffic congestion on a given 
 
 
 ### REPOSITORY
-Name changed from TensorFlowPredictCongestionTypes to Smart-Traffic
 
 **RELEASE VERSION  1.1.0**
 
