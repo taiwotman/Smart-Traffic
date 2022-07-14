@@ -156,11 +156,15 @@ Without opensource contributions this work would not have been derived.
      In: Seng K., Ang L., Liew   AC., Gao J. (eds) Multimodal Analytics for Next-Generation Big Data Technologies 
      and Applications(pg. 319-335). doi: https://doi.org/10.1007/978-3-319-97598-6_13. Springer, Cham.
  
+ T. Adetiloye, A. Awasthi  (2018).  Traffic Condition Monitoring Using Social Media Analytics. 
+     In: Roy, S., Samui, P., Deo, R., Ntalampiras, S. (eds) Big Data in Engineering Applications. Studies in Big Data, vol 44. Springer, Singapore.   
+     https://doi.org/10.1007/978-981-10-8476-8_13
+ 
  T. Adetiloye, A. Awasthi(2017). Predicting Short-Term Congested Traffic Flow on Urban Motorway Networks. 
- In P. Samui, S.S Roy, V.E. Balas(Eds.), Handbook of Neural Computation(pg. 145–165).
- doi: https://doi.org/10.1016/B978-0-12-811318-9.00008-9. Academic Press.
+     In P. Samui, S.S Roy, V.E. Balas(Eds.), Handbook of Neural Computation(pg. 145–165).
+     doi: https://doi.org/10.1016/B978-0-12-811318-9.00008-9. Academic Press.
 
 ### LICENSE
 
- T. Adetiloye (2021). Predicting Short-Term Traffic Flow Congestion On Urban Motorway Networks (Patent No US11,195,412 B2). U.S. Patent and Trademark Office. 
- https://rb.gy/faqg9y
+ T. Adetiloye (2021). Predicting Short-Term Traffic Flow Congestion On Urban Motorway Networks (Patent No US11,195,412 B2).  
+     U.S. Patent and Trademark Office. https://rb.gy/faqg9y
