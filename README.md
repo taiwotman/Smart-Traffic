@@ -157,8 +157,7 @@ Without opensource contributions this work would not have been derived.
      and Applications(pg. 319-335). doi: https://doi.org/10.1007/978-3-319-97598-6_13. Springer, Cham.
  
  T. Adetiloye, A. Awasthi  (2018).  Traffic Condition Monitoring Using Social Media Analytics. 
-     In: Roy, S., Samui, P., Deo, R., Ntalampiras, S. (eds) Big Data in Engineering Applications. Studies in Big Data, vol 44. Springer, Singapore.   
-     https://doi.org/10.1007/978-981-10-8476-8_13
+     In: Roy, S., Samui, P., Deo, R., Ntalampiras, S. (eds) Big Data in Engineering Applications. Studies in Big Data, vol 44. Springer, Singapore.  https://doi.org/10.1007/978-981-10-8476-8_13
  
  T. Adetiloye, A. Awasthi(2017). Predicting Short-Term Congested Traffic Flow on Urban Motorway Networks. 
      In P. Samui, S.S Roy, V.E. Balas(Eds.), Handbook of Neural Computation(pg. 145–165).
