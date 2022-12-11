@@ -3,6 +3,6 @@ urllib3==1.24.3
 Werkzeug>=0.7
 WTForms==2.1 
 numpy>=1.13.3
-tensorflow==2.5.0rc0
+tensorflow==2.8.0
 flask-wtf==1.0.0
 
